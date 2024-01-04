@@ -1,0 +1,85 @@
+:root {
+    /* Cambiar los colores de front mentor */
+  --backgroundGradient: radial-gradient(circle at center, #1f3756, #141539);
+  --headerOutline: hsl(217, 16%, 45%);
+  --rock: #db2e4d;
+  --rockShadow: #9d1634;
+  --paper: #5671f5;
+  --paperShadow: #2a45c2;
+  --scissors: #eb9f0e;
+  --scissorsShadow: #c76c1b;
+  --lizard: #834ee3;
+  --lizardShadow: #351472;
+  --spock: #2d8dab;
+  --spockShadow: #156d88;
+
+  --border-color: ;
+  --shadow: ;
+
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+/*     margin: 0; */
+}
+html {
+    font-size: 62.5%;  /* 1rem = 10px */
+    box-sizing: border-box;
+}
+
+body {
+/*     max-width: 80rem; */
+    width: 120rem;
+    max-width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+  /*   padding: 3rem 0; */
+    color: #fff;
+    background-image: var(--backgroundGradient);
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1;
+    border: 3px solid yellow;
+  }
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* index */
+.game {
+    display: flex;
+    align-items: center;
+    padding-top: 10rem;
+    border: 10px solid purple;
+}
+.game__modes {
+    width: 80rem;
+    width: 120rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border: 3px solid blue;
+   /*  font-size: 3rem; */
+}
+.game__container {
+    text-align: center;
+}
+.game__text {
+    display: inline-block;
+    margin-top: 3rem;
+
+}
