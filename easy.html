@@ -11,7 +11,7 @@
     <title>Rock Paper Scissors</title>
   </head>
 
-  <body>
+  <body class="easy">
 
     <header class="header">
       <div class="header__score">
@@ -19,9 +19,9 @@
         <span id="points-user" class="header__points">0</span>
       </div>
       <div class="header__logo">
-        <p class="header__block">ROCK</p>
-        <p class="header__block">PAPER</p>
-        <p class="header__block">SCISSORS</p>
+        <p class="header__block">Rock</p>
+        <p class="header__block">Paper</p>
+        <p class="header__block">Scissors</p>
       </div>
       <div class="header__score">
         <span class="header__title">PC</span>
@@ -30,43 +30,43 @@
     </header>
 
     <main>
-        <div  class="game__items game__items--easy" id="game-items">
 
-            <div class="game__item game__item--rock game__item--rock-easy" data-item="rock">
-                <img src="assets/img/icon-rock.svg" class="game__image" alt="icon rock" />
-            </div>
-
-            <div class="game__item game__item--paper game__item--paper-easy" data-item="paper">
-            <img src="assets/img/icon-paper.svg" class="game__image" alt="icon paper" />
-            </div>
-
-            <div class="game__item game__item--scissors game__item--scissors-easy" data-item="scissors">
-            <img src="assets/img/icon-scissors.svg" class="game__image" alt="icon scissors"/>
-            </div>
-
+      <div  class="game__items game__items--easy" id="game-items">
+        <div class="game__item game__item--rock game__item--rock-easy" data-item="rock">
+            <img src="assets/img/icon-rock.svg" class="game__image" alt="icon rock" />
         </div>
 
-        <div class="results "  id="game-results">
-            <div>
-                <h2>You Picked: </h2>
-                <div class="results__item results__item--result" id="user-picked">
-            <!--        <img id="picked-user-image" src="assets/img/icon-lizard.svg" alt="image icon" />  -->
-                </div>
-            </div>
-                
-            <div>
-                <h2>PC Picked: </h2>
-                <div class="results__item results__item--result" id="pc-picked">  </div>
-            </div>
-
-            <div>
-                <h2 id="result"></h2>
-        <!--           <button id="play-again">Play Again</button> -->
-            </div>
+        <div class="game__item game__item--paper game__item--paper-easy" data-item="paper">
+          <img src="assets/img/icon-paper.svg" class="game__image" alt="icon paper" />
         </div>
 
+        <div class="game__item game__item--scissors game__item--scissors-easy" data-item="scissors">
+          <img src="assets/img/icon-scissors.svg" class="game__image" alt="icon scissors"/>
+        </div>
+      </div>
+
+      <div class="results hide"  id="game-results">
+        <div>
+            <h2 class="results__text">Your Picked: </h2>
+            <div class="game__item   results__item results__item--result" id="user-picked">
+                <img id="picked-user-image" class="game__image" src="assets/img/icon-lizard.svg" alt="image icon"> 
+            </div>
+        </div>
+            
+        <div>
+            <h2 class="results__text" id="result"></h2>
+            <button class="results__btn" id="play-again">Play Again</button>
+        </div>
+
+        <div>
+            <h2 class="results__text">PC Picked: </h2>
+            <div class="game__item    results__item results__item--result" id="pc-picked"> 
+                <img id="picked-pc-image" class="game__image" src="assets/img/icon-lizard.svg" alt="image icon"/> 
+            </div>
+        </div>
+      </div>
     </main>
-
+      
     <button id="button-rules" class="button">Rules</button>
 
     <div id="modal" class="modal">
