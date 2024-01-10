@@ -58,7 +58,9 @@ a {
 .advanced {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+  /*   justify-content: space-evenly; */
+    justify-content: center;
+    gap: 3rem;
 }
 .game {
     display: flex;
@@ -280,29 +282,45 @@ a {
 .results__item--result {
     position: static;
 }
+
+.button-back,
 .button {
     position: absolute;
-    right: 4rem;
-    bottom: 2rem;
     background: var(--blueLight);
     padding: 1rem 2rem;
-    width: 10rem;
+    width: 15rem;
     border-radius: 0.5rem;
     border: 1px solid var(--blueText600);
     color: var(--blueText600);
     font-weight: 700;
     cursor: pointer;
+    text-align: center; 
+}
+
+.button {
+    right: 4rem;
+    bottom: 2rem;
+}
+.button-back {
+    left: 4rem;
+    bottom: 2rem;
 }
 @media (min-width: 768px) {  
     .button {
         right: 8rem;
         bottom: 4rem;
-        width: 15rem;
+    }
+    .button-back {
+        left: 8rem;
+        bottom: 4rem;
     }
 }
 @media (min-width: 992px) {  
     .button {
         right: 17%;
+    }
+    .button-back {
+        left: 17%;
     }
 }
 .modal {

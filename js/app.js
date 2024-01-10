@@ -9,6 +9,7 @@ const gameResult = document.getElementById('game-results')
 const playAgain = document.getElementById('play-again')
 const result = document.getElementById('result')
 const btnRules = document.getElementById('button-rules')
+const btnBack = document.getElementById('button-back')
 const modal = document.getElementById('modal')
 
 let userSelection = null
@@ -138,10 +139,12 @@ function changeScreen() {
         gameResult.classList.remove('hide')
         gameItem.classList.add('hide')
         btnRules.classList.add('hide')
+        btnBack.classList.add('hide')
     } else {
         gameResult.classList.add('hide')
         gameItem.classList.remove('hide')
         btnRules.classList.remove('hide')
+        btnBack.classList.remove('hide')
     }
 }
 function showModal() {
